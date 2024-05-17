@@ -1,0 +1,61 @@
+<div>
+  <div>
+    <{% if section.settings.is_title %}h1{% else %}h2{% endif %}>Hola</{% if section.settings.is_title %}h1{% else %}h2{% endif %}>
+      {% if section.settings.subtitle != blank %}
+          <p>{{ section.settings.subtitle }}</p>
+      {%  endif %}
+  </div>
+  <div>
+    {% for block in section.blocks %}
+        <a href="{{ block.settings.button_link }}">{{block.settings.botoncito}}</a>
+    {%  endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Nico",
+    "settings": [
+      {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Acá va el titulo salame"
+      },
+      {
+        "type": "checkbox",
+        "id": "is_title",
+        "label": "Is Title?"
+      },
+      {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Description",
+          "info": "Acá describis el producto bobo"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "button",
+        "name": "Jorgito",
+        "settings": [
+          {
+            "type": "text",
+            "id": "botoncito",
+            "label": "Boton",
+            "default": "Boton"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nico"
+      }
+    ]
+  }
+{% endschema %}
