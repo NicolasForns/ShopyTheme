@@ -74,9 +74,18 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "offer_banner_jRbTLY": {
+      "type": "offer-banner",
+      "settings": {
+        "title": "Hoto Sale",
+        "subtitle": "Compra papa!! Que esperas!",
+        "description": "<p>Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! Compra ya! <\/p>"
+      }
     }
   },
   "order": [
-    "6a3bb789-ce10-45f5-ae67-e2063ef8c76b"
+    "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
+    "offer_banner_jRbTLY"
   ]
 }

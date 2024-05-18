@@ -1,0 +1,39 @@
+<div class="offer-banner-wrapper">
+    {% if section.settings.title != blank %}
+        <h2 class="title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+        <h2 class="subtitle">{{ section.settings.subtitle }}</h2>
+    {% endif %}
+    {% if section.settings.description != blank %}
+        <h2 class="description">{{ section.settings.description }}</h2>
+    {% endif %}
+</div>
+
+{% schema %}
+{
+    "name": "Offer Banner",
+    "presets": [{
+        "name": "Offer Banner"
+    }],
+    "tag": "section",
+    "class": "offer-banner-section",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Title",
+            "id": "title"
+        },
+        {
+            "type": "text",
+            "label": "Sub title",
+            "id": "subtitle"
+        },
+        {
+            "type": "richtext",
+            "label": "Description",
+            "id": "description"
+        }
+        ]
+}
+{% endschema %}
